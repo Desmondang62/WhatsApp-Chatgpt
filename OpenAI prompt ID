@@ -1,0 +1,12 @@
+import OpenAI from "openai";
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+const response = await openai.responses.create({
+  prompt: {
+    "id": "pmpt_68774c66e83c8193859dd9b5c0f371f9069ae30390d4e5ec",
+    "version": "1"
+  }
+});
